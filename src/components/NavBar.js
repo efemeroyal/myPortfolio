@@ -27,9 +27,7 @@ function NavBar() {
         </ul>
       </nav>
 
-      <div className="search">
-        <input type="input" placeholder="Search" />
-      </div>
+      <div className="theme-toggler active"></div>
 
       <div className="menu">
         <span></span>
