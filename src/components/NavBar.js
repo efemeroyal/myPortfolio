@@ -1,3 +1,5 @@
+import "../styles/NavBar.css";
+
 function NavBar({ switchTheme }) {
   return (
     <header>

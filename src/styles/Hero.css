@@ -1,0 +1,133 @@
+/* Hero Section */
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80dvh;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  h1 {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+  }
+
+  .box {
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.6rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.highlight2 {
+  color: var(--secondary);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btn--accent {
+  background: var(--accent);
+}
+
+body.light .btn--accent {
+  color: var(--bg);
+}
+
+.btn--outline {
+  box-shadow: 0 0 0 2px var(--accent) inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--outline::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+body.light .btn--outline:hover {
+  color: var(--bg);
+}
+
+.btn--outline:hover::before {
+  transform: scaleX(1);
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img-container {
+    width: 40rem;
+    position: relative;
+    margin-top: -3rem;
+  }
+
+  .img-container::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 60%;
+    transform: translate(-60%, -110%);
+    width: 50rem;
+    height: 40rem;
+    background: var(--accent);
+    z-index: -1;
+    animation: blob 5s ease-in-out infinite alternate;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@keyframes blob {
+  from {
+    border-radius: 50% 72% 65% 40% / 70% 50% 10% 70%;
+  }
+  to {
+    border-radius: 20% 50% 60% 20% / 50% 70% 10% 10%;
+  }
+}

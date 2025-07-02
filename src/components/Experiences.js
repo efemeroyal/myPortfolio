@@ -6,24 +6,40 @@ function Experiences() {
       dateRange: "2021-2023",
       jobTitle: "Junior Frontend Developer",
       company: null,
-      description: "Worked on multiple websites within this time frame",
-      skills: ["HTML", "CSS", "JavaScript"],
+      description:
+        "Built and maintained multiple websites, honing skills in the following technologies",
+      skills: ["Front-end Development", "HTML5", "CSS3", "JavaScript (ES6+)"],
     },
     {
       dateRange: "2023-2024",
       jobTitle: "Web Motion and Design",
       company: null,
-      description: "Worked on multiple websites within this time frame",
-      skills: ["GSAP", "3D Design", "Figma", "Spline"],
+      description:
+        "Created engaging web experiences with motion design utilizing the following technologies",
+      skills: [
+        "Motion Design",
+        "GSAP",
+        "3D Design",
+        "UI/UX Design (Figma)",
+        "Spline",
+      ],
     },
     {
       dateRange: "2023-2025",
       jobTitle: "Senior Frontend Developer",
       company: "JaanTech",
-      description: "Worked on multiple websites within this time frame",
-      skills: ["React", "Saas", "TypeScript", "Python"],
+      description:
+        "Developed multiple scalable and efficient web applications using the following",
+      skills: [
+        "React",
+        "NextJS",
+        "Saas/SCSS",
+        "TypeScript",
+        "Tailwind CSS",
+        "Python",
+        "Version Control (Git / GitHub)",
+      ],
     },
-    // Add more experiences here
   ];
 
   return (
@@ -48,14 +64,12 @@ function Experiences() {
         {experiences.map((experience, index) => (
           <div key={index} className="timeline__item">
             <div className="timeline-item-content">
-              <h3>{experience.dateRange}</h3>
+              <h5>{experience.dateRange}</h5>
               <h4>{experience.jobTitle}</h4>
-              <p>{experience.company}</p>
+              <h3>{experience.company ?? "Personal Project"}</h3>
               <p>{experience.description}</p>
               <ul>
-                {experience.skills.map((skill, index) => (
-                  <li key={index}>{skill}</li>
-                ))}
+                <li>{experience.skills.join(", ")}</li>
               </ul>
             </div>
           </div>

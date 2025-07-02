@@ -1,0 +1,40 @@
+/* About Section */
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80dvh;
+}
+
+#about .left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  .img-container {
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#about .right {
+  flex-direction: column;
+  align-items: start;
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+  }
+  p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
