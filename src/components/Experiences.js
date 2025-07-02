@@ -1,12 +1,27 @@
+import "../styles/Experiences.css";
+
 function Experiences() {
   const experiences = [
     {
-      dateRange: "2022-2024",
-      jobTitle: "Frontend Developer",
+      dateRange: "2021-2023",
+      jobTitle: "Junior Frontend Developer",
       company: null,
-      description:
-        "Worked on multiple frontend projects within this time frame",
-      skills: ["React", "JavaScript", "CSS", "HTML"],
+      description: "Worked on multiple websites within this time frame",
+      skills: ["HTML", "CSS", "JavaScript"],
+    },
+    {
+      dateRange: "2023-2024",
+      jobTitle: "Web Motion and Design",
+      company: null,
+      description: "Worked on multiple websites within this time frame",
+      skills: ["GSAP", "3D Design", "Figma", "Spline"],
+    },
+    {
+      dateRange: "2023-2025",
+      jobTitle: "Senior Frontend Developer",
+      company: "JaanTech",
+      description: "Worked on multiple websites within this time frame",
+      skills: ["React", "Saas", "TypeScript", "Python"],
     },
     // Add more experiences here
   ];
@@ -29,19 +44,23 @@ function Experiences() {
         </div>
       </div>
 
-      {experiences.map((experience, index) => (
-        <div key={index} className="timeline__item">
-          <h3>{experience.dateRange}</h3>
-          <h4>{experience.jobTitle}</h4>
-          <p>{experience.company}</p>
-          <p>{experience.description}</p>
-          <ul>
-            {experience.skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      <div className="timeline__contents">
+        {experiences.map((experience, index) => (
+          <div key={index} className="timeline__item">
+            <div className="timeline-item-content">
+              <h3>{experience.dateRange}</h3>
+              <h4>{experience.jobTitle}</h4>
+              <p>{experience.company}</p>
+              <p>{experience.description}</p>
+              <ul>
+                {experience.skills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
