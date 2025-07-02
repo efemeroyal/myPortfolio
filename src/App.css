@@ -54,6 +54,8 @@ h2 {
   position: relative;
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -61,13 +63,14 @@ header {
   height: 9.2rem;
   padding: 0 8.4rem;
   width: 100%;
-  background: transparent;
+  background: var(--bg);
   border-bottom: 1px solid var(--text2);
   margin-bottom: 2rem;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 0px 0px 100px 2px var(--text2);
 }
 
 header .logo {
@@ -91,7 +94,10 @@ h2::before {
   font-size: 11rem;
   top: -60%;
   color: transparent;
+  text-transform: uppercase;
+  letter-spacing: -5px;
   -webkit-text-stroke: 2px var(--text2);
+  z-index: -1;
 }
 
 header ul {
@@ -127,6 +133,8 @@ header ul {
   }
 }
 
+/* Theme Toggler */
+
 .theme-toggler {
   width: 6rem;
   height: 3rem;
@@ -155,6 +163,8 @@ header ul {
 .theme-toggler.active::before {
   left: 65%;
 }
+
+/* Menu */
 
 .menu {
   display: none;
@@ -204,7 +214,6 @@ header ul {
   align-items: start;
   flex-direction: column;
   gap: 1.6rem;
-  padding-left: 8rem;
 
   h1 {
     font-size: 3.4rem;
@@ -315,6 +324,7 @@ body.light .btn--outline:hover {
 
 section {
   margin-bottom: 6.4rem;
+  padding: 0 8rem;
 }
 
 /* About Section */
@@ -340,7 +350,6 @@ section {
 #about .right {
   flex-direction: column;
   align-items: start;
-  padding-right: 4.2rem;
 
   h2 {
     font-size: 2.8rem;
@@ -351,6 +360,46 @@ section {
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
   }
+}
+
+.timeline__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .left,
+  & .right {
+    flex: 50%;
+    padding: 0;
+  }
+
+  & .left {
+    gap: 0;
+  }
+
+  & .right {
+    .bio {
+      font-size: 1.7rem;
+      position: relative;
+      line-height: 1.1;
+    }
+
+    .bio::after {
+      content: "";
+      position: absolute;
+      left: -6%;
+      top: 10%;
+      width: 5px;
+      height: 100%;
+      background: var(--accent);
+      border-radius: 999rem;
+    }
+  }
+}
+
+.timeline h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @keyframes blob {

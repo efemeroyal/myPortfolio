@@ -27,7 +27,7 @@ function NavBar({ switchTheme }) {
         </ul>
       </nav>
 
-      <div className="theme-toggler" onClick={switchTheme}></div>
+      <div className="theme-toggler active" onClick={switchTheme}></div>
 
       <div className="menu">
         <span></span>
