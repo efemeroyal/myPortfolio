@@ -1,4 +1,4 @@
-function NavBar() {
+function NavBar({ switchTheme }) {
   return (
     <header>
       <div className="logo">
@@ -27,7 +27,7 @@ function NavBar() {
         </ul>
       </nav>
 
-      <div className="theme-toggler active"></div>
+      <div className="theme-toggler" onClick={switchTheme}></div>
 
       <div className="menu">
         <span></span>

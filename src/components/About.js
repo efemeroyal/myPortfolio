@@ -8,7 +8,7 @@ function About() {
       </div>
 
       <div className="right">
-        <h2 data-bgText="ABOUT">
+        <h2 data-bgtext="ABOUT">
           With Royal Pride and a Humble Heart : <br />
           <span className="highlight">Efeme's Story</span>
         </h2>
