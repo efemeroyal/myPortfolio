@@ -2,8 +2,8 @@ function NavBar({ switchTheme }) {
   return (
     <header>
       <div className="logo">
-        <a href="#hero">
-          <img src="/Logo.jpg" alt="logo" />
+        <a href="#home">
+          <span className="highlight"> ROYAL </span>
         </a>
       </div>
 

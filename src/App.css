@@ -84,6 +84,12 @@ header .logo {
     width: 100%;
     border-radius: 50%;
   }
+
+  a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 800;
+  }
 }
 
 h2::before {
@@ -366,6 +372,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
+
+  h2::before {
+    top: -160%;
+    font-size: 10rem;
+  }
 
   & .left,
   & .right {
