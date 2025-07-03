@@ -23,6 +23,8 @@ function Hero() {
             Download CV
           </a>
         </div>
+
+        <div className="social-links">SOCIAL MEDIA HANDLES</div>
       </div>
       <div className="right">
         <div className="img-container">
