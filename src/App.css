@@ -15,6 +15,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,10 +38,10 @@ body.dark {
 body.light {
   --bg: #f2f2f2;
   --primary: #0284c7;
-  --secondary: #64748b;
+  --secondary: #7286a1;
   --accent: #8a0000;
   --accent2: #8a000080;
-  --text: #1a1a1a;
+  --text: #0f0f0f;
   --text2: #1a1a1a20;
 }
 
@@ -76,15 +77,16 @@ h2 {
   top: 33%;
   left: 25%;
   transform: translate(-35%, -25%);
-  background: var(--accent);
   transition: var(--trans);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--text);
 }
 
 .theme-toggler.active::before {
   left: 65%;
+  background: var(--accent);
 }
 
 /* Menu */
