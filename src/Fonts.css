@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Assistant";
+  src: url("fonts/Assistant-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "EBGaramond-Italic";
+  src: url("fonts/EBGaramond-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "EBGaramond";
+  src: url("fonts/EBGaramond-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Tinos-Bold";
+  src: url("fonts/Tinos-Bold.ttf");
+}
+@font-face {
+  font-family: "Tinos-BoldItalic";
+  src: url("fonts/Tinos-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Tinos-Italic";
+  src: url("fonts/Tinos-Italic.ttf");
+}
+@font-face {
+  font-family: "Tinos";
+  src: url("fonts/Tinos-Regular.ttf");
+}
